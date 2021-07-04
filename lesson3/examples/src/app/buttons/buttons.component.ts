@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class ButtonsComponent implements OnInit {
    buttonHeading: string = "Buttons"
    inactive: boolean = false;
+   buttonArray: boolean[] = [true, true, true];
+
+   
 
    constructor() { }
 
    ngOnInit() { }
+
+
+   switchButton() {
+      for (let i = 0; i < this.buttonArray.length; i++) {
+         this.buttonArray[i] = true;
+      } return this.buttonArray;
+   }
+
+
+
 
 }
