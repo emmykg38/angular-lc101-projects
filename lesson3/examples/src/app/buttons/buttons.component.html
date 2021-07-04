@@ -3,5 +3,10 @@
    <button [class.gold]="buttonArray[0]" [disabled]="!buttonArray[0]" (click)="buttonArray[0] = false">Gold</button> <br>
    <button [class.silver]="buttonArray[1]" [disabled]="!buttonArray[1]" (click)="buttonArray[1] = false">Silver</button> <br>
    <button [class.copper]="buttonArray[2]" [disabled]="!buttonArray[2]" (click)="buttonArray[2] = false">Copper</button> <hr>
-   <button (click)="switchButton()">Activate/Deactivate Buttons</button>
+   <button [class.catchMe] (click)="switchButton()">Activate/Deactivate Buttons</button>
+</div>
+<br>
+<br>
+<div class="buttons">
+   <h3>{{jokeButtons}}</h3>
 </div>

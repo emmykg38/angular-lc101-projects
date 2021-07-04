@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,6 +10,9 @@ export class ButtonsComponent implements OnInit {
    buttonHeading: string = "Buttons"
    inactive: boolean = false;
    buttonArray: boolean[] = [true, true, true];
+   jokeButtons: string = "Joke Buttons... haha!"
+   caught: boolean = false;
+
 
    
 
@@ -22,6 +26,7 @@ export class ButtonsComponent implements OnInit {
          this.buttonArray[i] = true;
       } return this.buttonArray;
    }
+
 
 
 
